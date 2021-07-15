@@ -11,7 +11,7 @@ jobs:
      - run:
          name: Build docker image
          command: |
-           docker build -t ubuntu-git:20.04 .
+           docker build -t ${CIRCLE_USERNAME}/ubuntu-git:20.04 .
 
      - run:
          name: Push to docker hub
